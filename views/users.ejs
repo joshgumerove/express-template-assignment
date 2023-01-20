@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= pageTitle %></title>
+        </head>
+        <body>
+            <%- include('./includes/navigation.ejs') %>
+                <h1>Welcome to the Users Page</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Exercitationem eum ullam ipsam fuga aspernatur, laborum
+                    soluta
+                    repellat, saepe sapiente eius incidunt nisi dignissimos
+                    recusandae mollitia at perferendis necessitatibus iusto!
+                    Consequuntur dolorem voluptas deleniti soluta saepe, illum,
+                    temporibus ipsum atque, modi vero facilis nesciunt eum
+                    molestiae
+                    omnis. Unde earum totam possimus.</p>
+                <% if(hasUsers) { %>
+                    <ul>
+                        <% for (let user of applicationUsers) { %>
+                            <li><p><%= user.email %></p></li>
+                                <% } %>
+                                </ul>
+                                <% } %>
+                                </body>
+                            </html>

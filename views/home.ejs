@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <%- include('./includes/navigation.ejs') %>
+            <h1>Welcome To the Home Page</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dignissimos
+                corporis inventore omnis explicabo, quas ipsum dolore, earum,
+                iure
+                deserunt deleniti assumenda itaque illum nihil? Mollitia quod
+                quo
+                pariatur deserunt maxime.</p>
+
+            <form action="/add-user" method="POST">
+                <label for="email">Email</label><br>
+                <input type="text" name="email" id="email">
+                <button type="submit">Add User</button>
+            </form>
+        </body>
+    </html>
